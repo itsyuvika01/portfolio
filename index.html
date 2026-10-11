@@ -1,106 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Site Header & Navigation -->
-    <header class="site-header">
-      <nav class="nav-container">
-        <ul role="list" class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Main Content Area -->
-    <main>
-      <!-- Hero / Home Section -->
-      <section id="home" class="section hero">
-        <div class="hero-content">
-          <img src="https://media.licdn.com/dms/image/v2/D5603AQGCT9vvq3VmoQ/profile-displayphoto-crop_800_800/B56Z8iamMuG8AI-/0/1782988826673?e=1792627200&v=beta&t=lQgdCdsLI9zEbojzReP5XZyvGPLVUiGRvTm1inlLLHM" alt="Profile photo of developer" class="profile-img" />
-          <h1>Yuvika Goel</h1>
-          <p class="hero-intro">Web Developer & full stack developer enthusiast</p>
-          <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary">Contact Me</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-          <p>
-            Hello! I am a passionate web developer focused on building modern, responsive, and accessible web applications.
-            I have experience in python and i am currently learning full stack development in java. I enjoy turning complex problems into simple, beautiful, and intuitive designs.
-          </p>
-          <div class="skills-overview">
-            <h3>Core Skills</h3>
-            <ul>
-              <li>HTML5 & CSS3 (Flexbox & Grid Layouts)</li>
-              <li>Java</li>
-              <li>python</li>
-              <li>SQL</li>
-              <li>cpp</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section id="projects" class="section">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-          <!-- Project Card 1 -->
-          <article class="project-card">
-            <h3>A blind assistive stick with sensor technology</h3>
-            <p>A innovative solution designed to help visually impaired individuals navigate their environment more safely and independently.</p>
-            <div class="project-links">
-              <a href="https://docs.google.com/presentation/d/1LWGypEtiOZPcoOqnYz04gzArjON7si3s/edit?usp=sharing&ouid=110679300241633821817&rtpof=true&sd=true" target="_blank" rel="noopener">Project Details</a>
-          </article>
-
-         
-
-      <!-- Contact Section -->
-      <section id="contact" class="section">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-content">
-          <p>Want to work together or discuss a project? Feel free to reach out!</p>
-          <form class="contact-form" action="#" method="post">
-            <div class="form-group">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!-- Site Footer -->
-    <footer class="site-footer">
-      <div class="footer-content">
-        <p>&copy; 2026 Yuvika Goel. All rights reserved.</p>
-        <ul class="social-links">
-          <li><a href="https://github.com/itsyuvika01" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/yuvika-goel-b35999405/" target="_blank" rel="noopener">LinkedIn</a></li>
-        </ul>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yuvika Goel — AI/ML student and frontend developer learning by building useful things.">
+  <meta name="theme-color" content="#f8f5f0">
+  <title>Yuvika Goel — Curious by design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="reading-progress" id="readingProgress"></div>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="wordmark" href="#home">Yuvika <span>✳</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu"><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#lab">Idea lab</a><a href="#contact">Contact</a>
       </div>
-    </footer>
-  </body>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark theme" title="Change theme">☼</button>
+        <a class="resume-link" href="#contact">Let's connect <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="handwritten hello">Hi, I'm Yuvika <span>♡</span></p>
+        <p class="eyebrow">AI/ML STUDENT &nbsp;·&nbsp; FRONTEND DEVELOPER</p>
+        <h1>I like turning<br>curiosity into <em>things.</em></h1>
+        <p class="hero-text">I’m learning to build thoughtful digital experiences — from clean interfaces to ideas that connect software with the real world.</p>
+        <div class="hero-buttons"><a class="button button-dark" href="#projects">Explore my work <span>↘</span></a><a class="button button-outline" href="#about">A little about me</a></div>
+        <div class="social-links"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><span>·</span><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a><span>·</span><span class="availability"><i></i> Always learning</span></div>
+      </div>
+      <div class="hero-art" aria-label="A little illustration about building ideas">
+        <div class="sun-disc"></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-note note-one handwritten">dream a little<br>bigger <span>✳</span></div>
+        <div class="hero-note note-two"><span class="note-small">CURRENTLY EXPLORING</span><b>Java · DSA · AI</b><span class="note-arrow">↗</span></div>
+        <div class="paper-stack"><div class="paper paper-back"></div><div class="paper paper-front"><span class="paper-spark">✳</span><span class="paper-title">small steps,</span><span class="paper-title paper-title-2">real progress.</span><div class="paper-line"></div><div class="paper-line short"></div><div class="paper-stamp">Y / 2026</div></div></div>
+        <svg class="hero-flower" viewBox="0 0 100 170" fill="none" aria-hidden="true"><path d="M49 164C50 122 46 91 57 55" stroke="currentColor" stroke-width="1.4"/><path d="M49 133C30 109 19 115 17 127C31 137 40 136 49 133Z" stroke="currentColor" stroke-width="1.3"/><path d="M54 96C73 73 85 82 83 95C73 103 64 101 54 96Z" stroke="currentColor" stroke-width="1.3"/><path d="M58 53C38 43 42 27 53 24C65 32 64 42 58 53Z" stroke="currentColor" stroke-width="1.3"/><path d="M58 52C74 42 88 52 81 63C70 68 62 61 58 52Z" stroke="currentColor" stroke-width="1.3"/><path d="M58 52C42 57 30 46 39 36C50 34 56 43 58 52Z" stroke="currentColor" stroke-width="1.3"/><circle cx="58" cy="52" r="4" fill="currentColor"/></svg>
+        <div class="art-caption mono">A WORK IN PROGRESS, ALWAYS.</div>
+      </div>
+      <a class="hero-scroll" href="#about"><span></span> SCROLL A LITTLE</a>
+    </section>
+
+    <section class="intro-band">
+      <div class="wrap intro-band-inner"><span class="band-star">✳</span><p>Not here to know everything.</p><p class="band-emphasis">Here to keep learning, building, and getting better.</p><span class="band-star">✳</span></div>
+    </section>
+
+    <section class="section wrap about-section" id="about">
+      <div class="section-top"><p class="eyebrow">01 / THE PERSON BEHIND THE SCREEN</p><span class="handwritten section-aside">a work in progress ♡</span></div>
+      <div class="about-grid">
+        <div><h2>More than a<br><em>list of skills.</em></h2></div>
+        <div class="about-copy"><p class="large-copy">I’m a B.Tech student exploring AI/ML, software development, and the little details that make technology feel human.</p><p>I like understanding how things work, finding patterns in problems, and making ideas tangible. At the moment, that means strengthening my Java and DSA fundamentals while creating frontend projects and exploring how AI can help solve practical problems.</p><p>This website is my evolving notebook: a place for the things I’ve made, the things I’m learning, and the questions I’m still curious about.</p><a class="inline-link" href="#lab">Step into my idea lab <span>→</span></a></div>
+      </div>
+      <div class="values-row"><div><span>01</span><b>Stay curious</b><p>Ask better questions.</p></div><div><span>02</span><b>Build to learn</b><p>Make the idea tangible.</p></div><div><span>03</span><b>Keep it honest</b><p>Show the process, too.</p></div></div>
+    </section>
+
+    <section class="section skills-section" id="skills"><div class="wrap">
+      <div class="section-top"><p class="eyebrow">02 / MY TOOLKIT</p><span class="section-aside muted">Learning in public, one layer at a time.</span></div>
+      <div class="skills-heading"><h2>Tools in my<br><em>workshop.</em></h2><p>These are the technologies I’m currently learning and using. I’ll add depth, not just more names, as I grow.</p></div>
+      <div class="skills-list">
+        <article class="skill-row"><span class="skill-number">01</span><div class="skill-name"><span class="skill-symbol html-symbol">5</span><div><h3>Web foundations</h3><p>Semantic structure, responsive layouts, visual details.</p></div></div><div class="skill-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><span class="skill-arrow">↗</span></article>
+        <article class="skill-row"><span class="skill-number">02</span><div class="skill-name"><span class="skill-symbol java-symbol">J</span><div><h3>Programming & problem solving</h3><p>Learning to break down problems and write clearer solutions.</p></div></div><div class="skill-pills"><span>Java</span><span>DSA</span><span>OOP</span></div><span class="skill-arrow">↗</span></article>
+        <article class="skill-row"><span class="skill-number">03</span><div class="skill-name"><span class="skill-symbol ai-symbol">✳</span><div><h3>AI / ML exploration</h3><p>Connecting technical fundamentals to useful, real-world ideas.</p></div></div><div class="skill-pills"><span>Python basics</span><span>AI tools</span><span>ML concepts</span></div><span class="skill-arrow">↗</span></article>
+      </div>
+      <p class="small-note">A note on honesty: this section describes my current learning focus, not expert-level proficiency.</p>
+    </div></section>
+
+    <section class="section wrap projects-section" id="projects">
+      <div class="section-top"><p class="eyebrow">03 / THINGS I'VE MADE OR I'M EXPLORING</p><span class="handwritten section-aside">ideas need room to grow ✳</span></div>
+      <div class="projects-heading"><h2>A few things<br><em>taking shape.</em></h2><div class="project-filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all">Everything</button><button class="filter" data-filter="web">Web</button><button class="filter" data-filter="concept">Concepts</button></div></div>
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card" data-category="web">
+          <a href="#contact" class="project-visual visual-portfolio" aria-label="Personal portfolio project details"><div class="mock-page"><div class="mock-top"><span>y.</span><span>ABOUT&nbsp; WORK&nbsp; NOTES</span></div><div class="mock-main"><small>HELLO, I'M YUVIKA</small><b>Ideas into<br><i>experiences.</i></b><div class="mock-pill">EXPLORE ↗</div></div><div class="mock-orb"></div></div><span class="visual-index">01 / FRONTEND</span></a>
+          <div class="project-title-row"><h3>Personal Portfolio</h3><span>↗</span></div><p>A personal space built with HTML, CSS, and JavaScript to share my work and learning journey.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/" target="_blank" rel="noreferrer">Repository link to add ↗</a>
+        </article>
+        <article class="project-card" data-category="concept">
+          <a href="#lab" class="project-visual visual-trackback" aria-label="TrackBack AI concept details"><div class="track-illustration"><div class="track-ring ring-one"></div><div class="track-ring ring-two"></div><div class="track-ring ring-three"></div><span>TB<span>✳</span></span><i></i></div><span class="visual-index">02 / AI + IOT CONCEPT</span></a>
+          <div class="project-title-row"><h3>TrackBack AI</h3><span>↗</span></div><p>An early-stage concept exploring how intelligent connected systems might address a real-world tracking problem.</p><div class="project-tags"><span>AI research</span><span>IoT</span><span>Problem framing</span></div><a class="project-link" href="#lab">Read the thinking behind it ↗</a>
+        </article>
+        <article class="project-card" data-category="web">
+          <a href="#contact" class="project-visual visual-playground" aria-label="UI experiments project details"><div class="playground-card"><span class="play-star">✳</span><div class="play-line"></div><div class="play-line tiny"></div><div class="play-circles"><i></i><i></i><i></i></div><div class="play-footer">A STUDY IN SMALL DETAILS</div></div><span class="visual-index">03 / EXPERIMENTS</span></a>
+          <div class="project-title-row"><h3>UI Playground</h3><span>↗</span></div><p>A growing collection of experiments with CSS, layouts, motion, and small interaction details.</p><div class="project-tags"><span>CSS</span><span>Motion</span><span>UI design</span></div><a class="project-link" href="https://github.com/" target="_blank" rel="noreferrer">Repository link to add ↗</a>
+        </article>
+      </div>
+      <p class="small-note">Projects evolve. Links, screenshots, and outcomes should be updated when the work is ready to share.</p>
+    </section>
+
+    <section class="section idea-section" id="lab"><div class="wrap idea-grid">
+      <div class="idea-copy"><p class="eyebrow">04 / THE SIGNATURE FEATURE</p><h2>Welcome to my<br><em>idea garden.</em></h2><p>Not every thought starts as a finished project. This little interactive space lets you explore how I turn curiosity into a buildable idea.</p><p>Choose a seed. See the question, the possible direction, and the next step I’d take.</p><div class="handwritten idea-note">good things start small ↘</div></div>
+      <div class="idea-widget">
+        <div class="widget-header"><span class="widget-dot"></span><span>YUVIKA'S IDEA GARDEN</span><span class="mono">v.01</span></div>
+        <p class="widget-instruction">PICK A SEED TO EXPLORE</p>
+        <div class="seed-options" role="group" aria-label="Choose an idea"><button class="seed active" data-seed="0"><span>✳</span><b>Lost & found</b><small>TrackBack AI</small></button><button class="seed" data-seed="1"><span>⌘</span><b>Study smarter</b><small>Learning tools</small></button><button class="seed" data-seed="2"><span>⌂</span><b>Everyday friction</b><small>Small problems</small></button></div>
+        <div class="idea-result" aria-live="polite"><span class="result-label" id="resultLabel">SEED 01 / TRACKBACK AI</span><h3 id="resultTitle">What if finding a lost item didn't depend on luck?</h3><p id="resultQuestion">Could a low-cost connected system help people recover misplaced belongings while keeping privacy and battery life in mind?</p><div class="result-next"><span>MY NEXT STEP</span><b id="resultNext">Map the user journey and test the assumptions before choosing hardware.</b></div></div>
+        <div class="widget-footer"><span>Curiosity → question → prototype</span><span>✳</span></div>
+      </div>
+    </div></section>
+
+    <section class="section wrap now-section">
+      <div class="now-card"><div class="now-left"><p class="eyebrow">05 / CURRENTLY, NOT FOREVER</p><h2>What I'm focused<br>on <em>right now.</em></h2><p>A snapshot of this chapter. The plan can change as I learn more.</p></div><div class="now-list"><div><span class="now-count">01</span><p><b>Java + DSA</b><small>Build a strong problem-solving foundation.</small></p><span class="now-status">IN PROGRESS</span></div><div><span class="now-count">02</span><p><b>Frontend projects</b><small>Ship responsive, accessible websites.</small></p><span class="now-status">BUILDING</span></div><div><span class="now-count">03</span><p><b>AI / ML fundamentals</b><small>Learn the concepts before chasing the tools.</small></p><span class="now-status">EXPLORING</span></div></div></div>
+    </section>
+
+    <section class="section wrap contact-section" id="contact"><div class="contact-card"><div><p class="eyebrow">06 / SAY HELLO</p><h2>Good ideas get better<br><em>when shared.</em></h2><p>Have a project idea, a question, or a learning resource to recommend? I'd love to hear from you.</p></div><div class="contact-actions"><a class="button button-dark" id="emailLink" href="mailto:your.email@example.com">Write me an email ↗</a><button class="button button-outline" id="copyEmail" type="button">Copy email ⧉</button><p id="copyFeedback" class="copy-feedback" aria-live="polite"></p><div class="contact-socials"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div><span class="contact-flower handwritten">talk soon ♡</span></div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-inner"><a class="wordmark" href="#home">Yuvika <span>✳</span></a><p>Made with patience, curiosity, and a little CSS.</p><a href="#home">Back to the top ↑</a><span>© <span id="year"></span> Yuvika Goel</span></div></footer>
+</body>
 </html>
